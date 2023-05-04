@@ -5,8 +5,11 @@ from prometheus_flask_exporter import PrometheusMetrics
 app = Flask(__name__)
 metrics = PrometheusMetrics(app, group_by='endpoint')
 
+def sum(a, b):
+    return a + b
+
 @app.route("/")
-def coding_notes_app():  
+def coding_notes_app():
     return render_template('index.html')
 
 if __name__ == "__main__":
