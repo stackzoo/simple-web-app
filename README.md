@@ -17,17 +17,21 @@ docker build -t test/app:latest . \
 
 The web app UI can be visualized at `http://localhost:8887`:
 
-<p float="left">
-  <img src="Images/webapp.png" width="1300" />
-</p>
+<div>
+  <p float="left">
+    <img src="Images/webapp.png" width="1300" />
+  </p>
+</div>
 
 <br/>
 
 Note that the Flask Web app expose a `/metrics` endpoint:
 
-<p float="left">
-  <img src="Images/metrics.png" width="1300" />
-</p>
+<div>
+  <p float="left">
+    <img src="Images/metrics.png" width="1300" />
+  </p>
+</div>
 
 this is the default endpoint that Prometheus will scrape.
 <br>
