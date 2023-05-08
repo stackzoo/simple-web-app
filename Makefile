@@ -1,3 +1,4 @@
+# MAKEFILE FOR LOCAL DEVELOPMENT
 SHELL := /bin/bash
 SLEEP=$(shell which sleep)
 CURL=$(shell which curl)
