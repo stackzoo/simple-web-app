@@ -1,0 +1,15 @@
+replicaCount: 2
+
+image:
+  repository: host.docker.internal:5000/app
+  tag: "v1"
+  pullPolicy: Never
+
+service:
+  name: simple-web-app-service
+  type: ClusterIP
+  port: 80
+  targetPort: 9000
+
+env:
+  name: dev
