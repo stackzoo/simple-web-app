@@ -8,17 +8,27 @@ KUBECTL=$(shell which kubectl)
 # KUBECONFIG ?= $(HOME)/.kube/config
 
 ###### TEST FOR TEKTON PIPELINE #######
-.PHONY : all
-all: ## Test 
-	echo  "test all"
-    
-.PHONY : clean
-clean: ## Clean
-	echo  "test clean"
-    
-.PHONY : test
-test: ## Test 
-	echo  "test test"
+expanded = "$(simple)"
+simple := "foo"
+
+clean:
+	rm bar
+	rm foo
+
+foo: bar
+	touch foo
+
+bar:
+	touch bar
+
+all: foo
+
+test:
+  @echo lolnah
+
+.PHONY: all clean test
+
+.DEFAULT_GOAL: all
 #######################################
 
 .PHONY: help
