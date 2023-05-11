@@ -9,7 +9,7 @@ service:
   name: simple-web-app-service
   type: ClusterIP
   port: 80
-  targetPort: 9000
+  targetPort: 8887
 
 env:
   name: dev
