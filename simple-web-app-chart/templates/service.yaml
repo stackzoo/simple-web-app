@@ -4,7 +4,7 @@ metadata:
   name: {{ .Release.Name }}-service
 spec:
   selector:
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    app.kubernetes.io/instance: simple-web-app
   type: {{ .Values.service.type }}
   ports:
     - protocol: {{ .Values.service.protocol | default "TCP" }}
