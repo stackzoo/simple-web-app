@@ -32,3 +32,5 @@ spec:
             requests:
               memory: 300Mi
               cpu: 500m
+      imagePullSecrets:
+      - name: registry-creds
