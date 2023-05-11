@@ -1,9 +1,9 @@
 replicaCount: 2
 
 image:
-  repository: registry.sighup.io/devsecopsday/app:prod
-  tag: "v1"
-  pullPolicy: Never
+  repository: registry.sighup.io/devsecopsday/app
+  tag: "prod"
+  pullPolicy: IfNotPresent
 
 service:
   name: simple-web-app-service
