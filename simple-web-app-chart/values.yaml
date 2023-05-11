@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: host.docker.internal:5000/app
+  repository: registry.sighup.io/devsecopsday/app:prod
   tag: "v1"
   pullPolicy: Never
 
