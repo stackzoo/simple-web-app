@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: registry.sighup.io/devsecopsday/app
+  repository: registry.sighup.io/workshop/app
   tag: "prod"
   pullPolicy: IfNotPresent
 
